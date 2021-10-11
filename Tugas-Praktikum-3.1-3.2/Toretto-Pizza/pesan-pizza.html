@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Toretto</title>
+</head>
+<body>
+    <h1>Toretto Pizza | Pizzas-on-Demand</h1>
+    <p style="text-align: left;">Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+    
+        <!-- <legend>Your Information</legend> -->
+        <p>Your order Information</p>
+        <ul>
+            <li><label>Name:<input type="text" name="fullname"></label>
+            </li>
+            <li><label>Address: <br><textarea name="Address" cols="30" rows="5"></textarea></label></li>
+            <li><label>No. Telephone: <input type="number" name="NoTelepon"></label></li>
+            <li><label>Email: <input type="email" name="Email"></label></li>
+            <li><label>Delevery Intructions: <br><textarea name="Instruction" maxlength="400" placeholder="Maximum 400 characters long" cols="40" rows="8"></textarea></label></li>
+        </ul>
+
+        <br>
+
+    <h2>Choice your pizza type:</h2>
+    <p>Pizza type</p>
+    <br>
+    <p>Crust (Choose one):</p>
+    <ul style="list-style-type: none;">
+        <li><input type="radio" name="pizzatype" value="Classic white"> Classic white</li>
+        <li><input type="radio" name="pizzatype" value="Multigrain">Multigrain</li>
+        <li><input type="radio" name="pizzatype" value="Cheese-stuffed crust">Cheese-stuffed crust</li>
+        <li><input type="radio" name="pizzatype" value="Gluten-free">Glutten-Free</li>
+    </ul>
+    <p>Toppings (Choose as many as you want):</p>
+    <ul>
+        <input type="checkbox" id="topping1" name="topping1" value="sauce">
+        <label for="topping1">Red sauce</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="sauce">
+        <label for="topping2">White sauce</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="cheese">
+        <label for="topping3">Mozzarella Cheese</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Pepperoni">
+        <label for="topping4">Pepperoni</label><br>
+        <input type="checkbox" id="topping5" name="topping5" value="Mushroomsh">
+        <label for="topping5">Mushroomsh</label><br>
+        <input type="checkbox" id="topping6" name="topping6" value="Peppers">
+        <label for="topping6">Peppers</label><br>
+        <input type="checkbox" id="topping7" name="topping7" value="Anchovies">
+        <label for="topping7">Anchovies</label>
+    </ul>
+    <p>Number</p>
+    <p>How many pizzas:
+        <select name="jumlahpizza">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            
+        </select>
+    </p>
+
+    <a href="selesai-pesan-pizza.html"><input type="submit" value="Bring me pizza!"> </a><input type="reset">
+
+
+
+
+    
+</body>
+</html>

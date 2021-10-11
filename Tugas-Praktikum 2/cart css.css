@@ -1,0 +1,20 @@
+header {
+    background-color: rgb(74, 231, 1);
+    height: 90px;
+    padding: 20px;
+}
+
+header h1{
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    line-height: 10px;
+
+}
+
+header h2{
+    font-variant: small-caps;
+    display: inline;
+    text-align: center;
+    color:white;
+}
