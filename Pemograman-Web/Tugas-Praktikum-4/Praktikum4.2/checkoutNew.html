@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hanya untuk icon pak/kak -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+outlined">
     <link rel="stylesheet" href="style.css">
     <title>Checkout</title>
 </head>
@@ -26,87 +27,62 @@
     </nav>
     
     <!-- Thank You -->
-    <p style="font-size: 15px; text-align: left;"><img style="height: 100px; width: 160px; float: left;" src="./assets/logo-check.png" alt="check">Order 131217312</p>
-    <aside style="float: right; margin-left: 12px; background-color: lightgray; width: 30%;">
-        <table>
-            <thead>
-                <tr>
-                    <th><h4>Summary (1 Item)</h4></th>
-                </tr>
-            </thead>
-           
-            <tbody>
-                <tr>
-                    <td>Subtotal</td>
-                    <td style="text-align: right;">Rp. 200.000</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td style="text-align: right;">Rp. 30.000</td>
-                </tr>
-                <tr>
-                    <td>Est. Taxes</td>
-                    <td style="text-align: right;">Rp. 10.000<hr align="left" width="100%" style="height:1px;border:none;color:#333;background-color:#333;" /></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <!-- Discount Box -->
-                <tr>
-                    <td>
-                        <fieldset style="border: white;">
-                            <legend>Gift card or discount code</legend>
-                            <input type="text" placeholder="Code discount"><input type="button" value="Apply">
-                        </fieldset>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>Total</b></td>
-                    <td style="text-align: right;"><b>Rp. 240.000</b></td>
-                </tr>
-            </tfoot>
-        </table>
-    </aside>
-    <h4 style="font-size: 22px;">Thank you, Kenny!</h4>
-    <hr style="width: 50%; float: left;; height: 2px; border-width: 0; color: gray; background-color: gray;"><br>
-    <p style="font-size: 16px;">Your order in confirmed.</p>
-    <p style="font-size: 16px;">We've accepted your order and we're getting it ready.</p>
-    <hr style="width: 50%; float: left;; height: 2px; border-width: 0; color: gray; background-color: gray;"><br>
-    <!-- Customer information -->
-    <h3>Customer Information</h3>
-        <!-- Alamat -->
-    <table>
-        <thead>
-            <tr>
-                <th align="left"><b>Shipping Address</b></th>
-                <!-- Jarak antara shipping address dan billing address -->
-                <th style="width: 15%;"></th>
-                <th align="left"><b>Billing Adress</b></th>
-            </tr>
-            <tr>
-                <td rowspan="7">
-                    Kenny Bostick <br>
-                    <a href="#">12 Waldo Point Road</a><br>
-                    <a href="#">Mishauken, NY 11200</a><br>
-                    <a href="#">United States</a><br>
-                    <br>
-                        <b>Shipping Method</b><br>
-                        UPS Ground (Estimated ship <br>
-                        time of 3-6 days)
-                </td>
-                <td style="color: rgb(255, 253, 253);">jarak</td>
-                <td rowspan="8">
-                    Kenny Bostick <br>
-                    <a href="#">12 Waldo Point Road</a><br>
-                    <a href="#">Mishauken, NY 11200</a><br>
-                    <a href="#">United States</a><br>
-                    <br>
-                        <b>Payment Method</b><br>
-                        <span class="material-icons">payment</span>
-                        <span>Ending in 3217-Rp. 200.000</span>
-                </td>
-            </tr>
-        </thead>
-    </table>
+    <div class="orderid">
+        <main>
+            <table class="customer-shipping-info">
+                <!-- Shipping Information -->
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <span><img style="width: 50px; height: 50px;" src="./assets/outline_check_circle_outline_black_48dp.png" alt="check"></span>
+                            <div style="display: inline-block; margin-left: 1rem;">
+                                <small>Order 131217312</small>
+                                <h2>Thank You, Kenny!</h2>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="confirm" colspan="2">
+                            <p>Your Order is Confirmed.</p>
+                            <p>We've accepted your order and we're getting it ready.</p>
+                        </td>
+                    </tr>
+                    <div class="csinfo">
+                        <tr>
+                            <td colspan="2">
+                                <h3>Customer Information</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Shipping Address</b></p>
+                                <p>Kenny Bostick</p>
+                                <p><a class="alamat" href="#"> 12 Waldo Point Road Mishauken, </a></p>
+                                <p><a class="alamat" href="#">NY 11200 United State</a></p>
+                            </td>
+                            <td>
+                                <p><b>Billing Address</b></p>
+                                <p>Kenny Bostick</p>
+                                <p><a class="alamat" href="#"> 12 Waldo Point Road Mishauken,</a></p>
+                                <p><a class="alamat" href="#"> NY 11200 United State</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                    </div>
+                            <td style="padding: 10px 0 20px;">
+                                <p><b>Shipping Methode</b></p>
+                                <p>SiCepat (Estimated ship </p>
+                                <p>time 1 - 3 days)</p>
+                            </td>
+                            <td style="padding: 10px 0 20px;">
+                                <p><b>Payment Methode</b></p>
+                                <p>Ending in 3217 - Rp. 200.000</p>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
     <hr style="position: absolute; width: 50%; float: left;; height: 2px; border-width: 0; color: gray; background-color: gray;">
     <!-- Footer -->
     <footer style="position: static; bottom: 0; width: 100%;">

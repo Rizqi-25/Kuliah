@@ -1,3 +1,8 @@
+/* Icon1 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* Icon2 */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+outlined");
+
 * {
   margin: 0;
   padding: 0;
@@ -32,4 +37,33 @@ nav .navs a {
 nav .navs a:hover {
   background-color: lightgray;
   border-radius: 15px;
+}
+
+.orderid {
+  margin-top: 30px;
+}
+
+aside {
+  height: fit-content;
+  padding: 30px;
+  background-color: lightgray;
+  border-radius: 20px;
+  width: 30%;
+  float: right;
+  margin-right: 20px;
+}
+
+td.confirm {
+  font-size: larger;
+  padding: 20px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.alamat {
+  color: blue;
 }
