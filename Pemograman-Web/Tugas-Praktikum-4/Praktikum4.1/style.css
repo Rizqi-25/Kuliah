@@ -1,0 +1,70 @@
+* {
+    padding: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    box-sizing: border-box;
+}
+
+main {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+img {
+    width: 3cm;
+    height: 4cm;
+    clear: left;
+}
+
+table {
+    margin-right: 15px;
+}
+td.category {
+    text-align: right;
+    text-decoration: underline;
+}
+td.alamat {
+    width: 200px;
+}
+td.biodata {
+    align-content: center;
+}
+td.email {
+    width: 250px;
+}
+td.nohp {
+    width: 200px;
+    text-align: center;
+}
+
+article.artikel {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12;
+}
+
+p.paragraf1 {
+    text-indent: 2rem;
+    text-align: justify;
+}
+p.paragraf2 {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+section.attachmen video{
+    width: 6cm;
+    height: 6cm;
+}
+
+section.attachmen iframe{
+    width: 7cm;
+    height: 7cm;
+}
+section.attachmen fieldset{
+    width: 6cm;
+    height: 6cm;
+    display: inline;
+    vertical-align: top;
+    position: relative;
+  
+}

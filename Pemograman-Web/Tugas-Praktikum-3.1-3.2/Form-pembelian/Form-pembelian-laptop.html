@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian Laptop</title>
+</head>
+<body bgcolor="lightgrey">
+    <fieldset>
+        <table width="100%" >
+            <thead>
+                <th colspan="2"><a href="#">Home |</a></th>
+                <th colspan="2"><a href="#">Generate Link |</a></th>
+                <th colspan="2"><a href="#">Transaction History |</a></th>
+                <th colspan="2"><a href="#">Policy |</a></th>
+                <th colspan="2"><a href="#">Logout</a></th>
+            </thead>
+        </table>
+    </fieldset><br>
+    <form>
+        <table width="100%">
+            <tr>
+                <td><input type="file" name="foto"></td>
+                <td>Tittle Here :</td>
+                <td><input type="text" name="merklaptop"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Description :</td>
+                <td><textarea name="Alamat" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Account No :</td>
+                <td><input type="number" name="No-rekening"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bank :</td>
+                <td><input type="text" list="namabank" name="bank">
+                    <datalist id="namabank">
+                        <option value="Bank BRI"></option>
+                        <option value="Bank BNI"></option>
+                        <option value="Bank BCA"></option>
+                        <option value="Bank BTN"></option>
+                        <option value="Bank Mandiri"></option>
+                        <option value="Bank BSI"></option>
+                        <option value="Bank Permata"></option>
+                        <option value="Bank CIMB Niaga"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Account Holder :</td>
+                <td><input type="text" name="pemilikrekening" placeholder="Name Here"></td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td>Trasnsaction :</td>
+                <td><select name="jumlahtransaksi">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2"><p>* if the transaction is for 3 person, choose 3 from the drop-down list.</p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input style="color: yellowgreen;" type="checkbox" id="mobilephone" name="mobilephone">
+                <label style="color: yellowgreen;" for="mobilephone">Send To Mobile Phone</label>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input style="color: yellowgreen;" type="checkbox" id="email" name="email">
+                <label style="color: yellowgreen;" for="email">Send To Email</label>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Send To Mobile Phone :</td>
+                <td><input type="number" name="notelepon" placeholder="Mobile Phone"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Send To Email :</td>
+                <td><input type="email" name="email" placeholder="Your Email"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input style="color: green;" type="submit" value="Generate Nabr Link"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
