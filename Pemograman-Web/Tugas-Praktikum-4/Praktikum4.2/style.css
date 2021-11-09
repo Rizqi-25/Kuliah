@@ -24,7 +24,7 @@ nav .sitename {
   text-transform: lowercase;
   color: rgb(14, 158, 14);
 }
-nav .navs {
+nav.navs {
   display: flex;
 }
 
@@ -36,21 +36,27 @@ nav .navs a {
 }
 nav .navs a:hover {
   background-color: lightgray;
-  border-radius: 15px;
+  color: blue;
 }
 
 .orderid {
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: auto;
+  gap: 30px;
+  
 }
 
 aside {
+  position: absolute;
+  top: 150px;
+  left: 70%;
   height: fit-content;
-  padding: 30px;
+  padding: 10px;
   background-color: lightgray;
-  border-radius: 20px;
-  width: 30%;
+  width: 25%;
   float: right;
-  margin-right: 20px;
 }
 
 td.confirm {
@@ -66,4 +72,41 @@ td {
 
 .alamat {
   color: blue;
+}
+
+.customer-shipping-info td {
+  padding: 10px 10px;
+ 
+}
+
+.right {
+  text-align: right;
+  position: absolute;
+  left: 200px;
+}
+
+.button {
+  border-top: 2px solid white;
+}
+
+.total {
+  border-top: 2px solid white;
+}
+
+table.footnav {
+  width: 99%;
+  margin-top: 20px;
+  border-top: 2px solid black;
+  padding-top: 20px;
+}
+
+th.toko p {
+  color: #0E9E0E;
+  text-align: left;
+  font-size: 2em;
+}
+
+th.nav {
+  text-align: center;
+  font-size: smaller;
 }
