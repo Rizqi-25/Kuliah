@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black
+}
+
+nav {
+  display: flex;
+  padding: 20px 50px;
+  align-items: baseline;
+  background-color: lightgray;
+}
+nav .sitename {
+  margin-right: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: rgb(14, 158, 14);
+}
+nav .navs {
+  display: flex;
+}
+
+nav .navcart {
+  margin-left: 40%;
+}
+nav .navs a {
+  padding: 5px 15px;
+}
+nav .navs a:hover {
+  background-color: lightgray;
+  border-radius: 15px;
+}
