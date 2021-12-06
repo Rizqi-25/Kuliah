@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Dolar ke Rupiah</title>
+
+    <script>
+        function konfersi(){
+            const hargaDolar = 14650
+            let $ = document.getElementById("dolar").value;
+            let hasilkonfersi = $ * hargaDolar;
+            let output = document.getElementById("hasil");
+            output.innerHTML = "Hasil Konfersi Dolar ke Rupiah = Rp. " + hasilkonfersi
+        }
+    </script>
+</head>
+<body>
+    <h2>Kurs Dolar ke Rupiah</h2>
+    <br>
+    <p>Harga Dolar = Rp. 14.650</p>
+    <input id="dolar" type="number" value="" size="5"> $
+    <br>
+    <button onclick="konfersi()">Konfersi</button>
+    <br>
+    <span id="hasil"></span>
+</body>
+</html>
