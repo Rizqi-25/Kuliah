@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung 2 Bilangan</title>
+
+    <script>
+        function hasilpenjumlahan(){
+            let x = Number(document.getElementById("bil1").value);
+            let y = Number(document.getElementById("bil2").value);
+            let z = x + y;
+            document.getElementById("hasil").value=z;
+        }
+    </script>
+</head>
+<body>
+    <input id="bil1" type="number" value="" size="5" onchange="hasilpenjumlahan()">
+    <br>
+    +
+    <br>
+    <input id="bil2" type="number" value="" size="5" onchange="hasilpenjumlahan()">
+    <br>
+    <button onclick="hasilpenjumlahan()">=</button>
+    <br>
+    <input type="text" id="hasil" value="">
+    
+</body>
+</html>
