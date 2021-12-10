@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kurs Rupiah</title>
+    <script type="text/javascript">
+        function konfersi() {
+
+            v = document.getElementById("valas").value;
+
+            if (v == 1){
+                inputJumlah = document.getElementById("asing").value;
+                mataUangAsing = 9915;
+                hitung = inputJumlah * mataUangAsing;
+                document.getElementById("total").value = "Rp. " + hitung;
+            }
+
+            else if (v == 2){
+                inputJumlah = document.getElementById("asing").value;
+                mataUangAsing = 13472;
+                hitung = inputJumlah * mataUangAsing;
+                document.getElementById("total").value = "Rp. " + hitung;
+            }
+            else if (v == 3){
+                inputJumlah = document.getElementById("asing").value;
+                mataUangAsing = 874;
+                hitung = inputJumlah * mataUangAsing;
+                document.getElementById("total").value ="Rp. " +  hitung;
+            }
+            else if (v == 4){
+                inputJumlah = document.getElementById("asing").value;
+                mataUangAsing = 120;
+                hitung = inputJumlah * mataUangAsing;
+                document.getElementById("total").value ="Rp. " +  hitung;
+            }
+            else if (v == 5){
+                inputJumlah = document.getElementById("asing").value;
+                mataUangAsing = 15888;
+                hitung = inputJumlah * mataUangAsing;
+                document.getElementById("total").value ="Rp. " +  hitung;
+            }
+            else if (v == 6){
+                inputJumlah = document.getElementById("asing").value;
+                mataUangAsing = 3592;
+                hitung = inputJumlah * mataUangAsing;
+                document.getElementById("total").value ="Rp. " +  hitung;
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table style="border: 2px solid black;">
+            <tr>
+                <th style="border: 1px solid black; text-align: center;">Masukan Nilai</th>
+                <th style="border: 1px solid black; text-align: center;">Valas</th>
+                <th style="border: 1px solid black; text-align: center;">Nilai Rupiah</th>
+            </tr>
+
+            <tr>
+                <td><input onkeyup="konfersi()" type="number" id="asing" placeholder="Masukkan Nilai" ></td>
+                <td>
+                    <select id="valas" onchange="konfersi()">
+                        <option value="0">Pilih Currentcy</option>
+                        <option value="1">Dollar US</option>
+                        <option value="2">Dollar Singapore</option>
+                        <option value="3">Ringgit Malaysia</option>
+                        <option value="4">Yen Jepang</option>
+                        <option value="5">Euro</option>
+                        <option value="6">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="text" disabled="" id="total" placeholder="Nilai Rupiah"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi ChatBox</title>
+    <style>
+        .roomchat {
+            border: 2px solid black;
+            width: 400px;
+            height: 300px;
+            right: 5px;
+            bottom: 65px;
+            position: fixed;
+        }
+        .inputChat {
+            position: fixed;
+            height: 30px;
+            width: 300px;
+            right: 100px;
+            bottom: 20px;
+        }
+
+        .send {
+            right: 50px;
+            bottom: 20px;
+            position: fixed;
+            height: 40px;
+            width: 60px;
+        }
+    </style>
+
+    <script>
+          function send(){
+            let roomchat = document.getElementById("rc");
+            let input_text = document.getElementById("input");
+
+            let hasil = roomchat.innerHTML = roomchat.innerHTML + "<br/>" + input_text.value;
+            let input = input_text.value="";
+            console.log("Berhasil")
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <div class="roomchat" id="rc">
+                        <!-- ISI HASIL CHAT -->
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="input" type="text"  class="inputChat" placeholder="Ketik Pesan lalu klik Send">
+                </td>
+                <td>
+                    <button onclick="send()" class="send">Send</button>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
