@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="src.js"></script>
+    <style>
+        #name_blank{
+            color: red;
+            margin-left: 10px;
+        }
+        #max_character{
+            color: red;
+            margin-left: 10px;
+        }
+        #email_blank{
+            color: red;
+            margin-left: 10px;
+        }
+        #time_blank{
+            color: red;
+            margin-left: 10px;
+        }
+        #tujuan_blank{
+            color: red;
+            margin-left: 10px;
+        }
+        #minmax_ticket{
+            color: red;
+            margin-left: 10px;
+        }
+        #invalid_email{
+            color: red;
+            margin-left: 10px;
+        }
+        .header{
+            margin-left: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="header" style="font-size: 40px;">Form Validation</h1>
+    </div>
+    <div class="container">
+        <form action="" id="form">
+            <fieldset>
+                <legend style="font-size: 30px;">Form Validation</legend>
+                <label>Nama Pelanggan</label>
+                <br>
+                <input placeholder="Your Name" size="100" type="text" name="nama" id="nama" value="" maxlength="30"> 
+                <span id="name_blank" hidden>Must be Filled! (Wajib Diisi!)</span>
+                <span id="max_character" hidden>Must below 30 character! (Nama harus dibawah 30 karakter!)</span>
+                <br>
+                <label>Email</label>
+                <br>
+                <input size="100" placeholder="example@gmail.com" type="email" name="email" id="email" value="">
+                <span id="email_blank" hidden>Must be Filled! (Wajib Diisi!)</span>
+                <span id="invalid_email" hidden>Invalid Email Format</span>
+                <br>
+                <label>Jam Keberangkatan</label>
+                <br>
+                <input type="time" name="time" id="time" value="">
+                <span id="time_blank" hidden>Must be Filled! (Wajib Diisi!)</span>
+                <br>
+                <label>Tujuan Keberangkatan</label>
+                <br>
+                <input size="100" type="text" name="tujuan" id="tujuan" value="">
+                <span id="tujuan_blank" hidden>Must be Filled! (Wajib Diisi!)</span>
+                <br>
+                <label>Jumlah Tiket</label>
+                <br>
+                <input type="number" name="tiket" id="tiket" min="0" max="10" value="">
+                <span id="minmax_ticket" hidden>Minimum 1 Tiket - Maximum 10 Tiket</span>
+                <br>
+                <button type="submit" onclick="gosubmit(event)">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    
+</body>
+</html>

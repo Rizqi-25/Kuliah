@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    
+</head>
+<body>
+    <fieldset>
+        <legend>Image Picker</legend>
+        <select name="buahs" id="buahs" onchange="pilihGambar()">
+            <option value="0">Pilih Gambar</option>
+            <option value="a">Alpukat</option>
+            <option value="b">Apel</option>
+            <option value="c">Cerry</option>
+            <option value="d">Kiwi</option>
+            <option value="e">Mangga</option>
+            <option value="f">Pir</option>
+            <option value="g">Pisang</option>
+            <option value="h">Semangka</option>
+            <option value="i">Strawberry</option>
+            <option value="j">Terong</option>
+        </select>
+    </fieldset>
+        
+    <div>
+        <img src="#" id="gambar" alt="" width="300px" >
+    </div>
+    
+    <script>
+        const gb = document.getElementById("gambar")
+
+        function pilihGambar() {
+          if (buahs.value == "a") {
+            gb.src = "image/alpukat.png"
+            alert("Ini gambar buah Alpukat")
+          }
+          else  if(buahs.value == "b") {
+            gb.src = "image/apel.png"
+            alert("Ini gambar buah Apel")
+          }
+          else  if(buahs.value == "c") {
+            gb.src = "image/cerry.png"
+            alert("Ini gambar buah cerry")
+          }
+          else  if(buahs.value == "d") {
+            gb.src = "image/kiwi.png"
+            alert("Ini gambar buah kiwi")
+          }
+          else  if(buahs.value == "e") {
+            gb.src = "image/mangga.png"
+            alert("Ini gambar buah mangga")
+          }
+          else  if(buahs.value == "f") {
+            gb.src = "image/pir.png"
+            alert("Ini gambar buah pir")
+          }
+          else  if(buahs.value == "g") {
+            gb.src = "image/pisang.png"
+            alert("Ini gambar buah pisang")
+          }
+          else  if(buahs.value == "h") {
+            gb.src = "image/semangka.png"
+            alert("Ini gambar buah semangka")
+          }
+          else  if(buahs.value == "i") {
+            gb.src = "image/strawberry.png"
+            alert("Ini gambar buah strawberry")
+          }
+          else  if(buahs.value == "j") {
+            gb.src = "image/terong.png"
+            alert("Ini gambar buah terong")
+          }
+        }
+    </script>
+    
+</body>
+</html>
