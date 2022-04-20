@@ -43,14 +43,10 @@ include_once './content/main/sidebar.php';
                     <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
-                            <p>
-                                Project dan Praktikum
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
+                        <h3>
+                            Project dan Praktikum
+                        </h3>
+                        <ul class="nav nav-pills">
                             <li class="nav-item">
                                 <a href="content/Project_1/index2.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
